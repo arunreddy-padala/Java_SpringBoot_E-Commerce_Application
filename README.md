@@ -2,8 +2,6 @@
 
 Languages and Frameworks: Java, Maven, Spring Boot Web, Spring Boot Cloud, Spring Security, MySQL, MongoDB, Postgres DB, Resilience 4J, Apache Kafka, API Gateway, Keycloak, Netflix Eureka, Zipkin, Docker, Prometheus, and Grafna.
 
-**Features**
-
 The project encompasses the following key features:
 
 ### **1. Service Discovery**
