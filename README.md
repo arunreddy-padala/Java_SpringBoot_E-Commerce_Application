@@ -28,10 +28,10 @@ The project follows an event-driven architecture paradigm using Apache Kafka as 
 
 Microservices security is achieved using Keycloak, an open-source identity and access management solution. Keycloak provides authentication and authorization services, allowing for secure access control and user management across the system.
 
-### **7. Containerised Application using Docker**
+### **7. Containerised Application **
 
 Docker is used to build images for the microservices and utilised multistage Docker buld with GCP Jib to automatically build images and push them to Docker Hub. 
 
-### **7. Service Monitoring and Visualisation**
+### **8. Service Monitoring and Visualisation**
 
 Microservice monitoring and visualisation is performed using Prometheus, and Grafna. Metrics related to CPU, load, Heap Space, Garbage Collection etc are monitored and visualised in a dashboard. 
