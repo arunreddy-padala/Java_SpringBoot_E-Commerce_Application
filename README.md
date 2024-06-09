@@ -1,37 +1,19 @@
-# Java_SpringBoot_E-Commerce_Application
+# RetailSphere_Java_Spring
 
-Languages and Frameworks: Java, Maven, Spring Boot Web, Spring Boot Cloud, Spring Security, MySQL, MongoDB, Postgres DB, Resilience 4J, Apache Kafka, API Gateway, Keycloak, Netflix Eureka, Zipkin, Docker, Prometheus, and Grafna.
+This project showcases an advanced microservices architecture utilizing a robust stack of technologies including Java, Maven, Spring Boot, Spring Cloud, and various other tools. Designed to provide a scalable, resilient, and secure system for enterprise-level applications, this architecture supports automatic service discovery, centralized configuration, distributed tracing, and muchmore.
 
-The project encompasses the following key features:
+Languages & Frameworks: Java, Maven, Spring Boot Web & Cloud, Spring Security, MySQL, MongoDB, Postgres DB, Resilience4J, Apache Kafka, API Gateway, Keycloak, Netflix Eureka, Zipkin, Docker, Prometheus, Grafana
 
-### **1. Service Discovery**
+Key Features:
+- Service Discovery: Implemented using Netflix Eureka, allowing microservices to automatically register and discover each other without hard-coded URLs.
+- Centralized Configuration: Utilizes Spring Cloud Config for managing all microservices configurations from a central repository, enhancing consistency and ease of updates.
+- Distributed Tracing: Facilitated by Zipkin, this feature provides end-to-end tracing of requests across microservices, crucial for debugging and performance tuning.
+- Circuit Breaker: Implements Resilience4J for fault tolerance, preventing cascading failures by halting requests to unhealthy services, thereby ensuring system stability.
+- Event-Driven Architecture: Leverages Apache Kafka to decouple microservices via asynchronous message passing, enhancing system reactivity and scalability.
+- Secure Microservices: Integrates Keycloak for robust identity and access management, securing microservices with advanced authentication and authorization capabilities.
+- Containerization: Employs Docker, enhanced with GCP Jib for efficient multistage builds, facilitating easy deployment and scaling within containerized environments.
+- Monitoring and Visualization: Utilizes Prometheus for monitoring and Grafana for visualization, tracking vital metrics such as CPU usage, memory load, and more, presented in insightful dashboards.
 
-Service discovery is implemented using Netflix Eureka. It enables automatic registration and discovery of microservices in the system, allowing them to locate and communicate with each other without explicit configuration.
-
-### **2. Centralized Configuration**
-
-Centralized configuration management is achieved using Spring Cloud Config. It provides a central repository to store and manage configuration files for all microservices, ensuring consistency and facilitating easy configuration changes.
-
-### **3. Distributed Tracing**
-
-Distributed tracing is implemented using Zipkin. It enables end-to-end tracing of requests as they flow through different microservices, providing insights into the performance and behavior of the system. This allows for efficient debugging and troubleshooting of issues.
-
-### **4. Circuit Breaker**
-
-Resilience4J is used to implement circuit breakers in the system. Circuit breakers help prevent cascading failures by monitoring the health of services and temporarily halting requests to a failing service. This improves overall system resilience and prevents overload.
-
-### **5. Event Driven Architecture**
-
-The project follows an event-driven architecture paradigm using Apache Kafka as the message broker. This allows for loose coupling between microservices and enables asynchronous communication, leading to improved scalability and responsiveness.
-
-### **6. Secure Microservices using Keycloak**
-
-Microservices security is achieved using Keycloak, an open-source identity and access management solution. Keycloak provides authentication and authorization services, allowing for secure access control and user management across the system.
-
-### **7. Containerised Application**
-
-Docker is used to build images for the microservices and utilised multistage Docker buld with GCP Jib to automatically build images and push them to Docker Hub. 
-
-### **8. Service Monitoring and Visualisation**
-
-Microservice monitoring and visualisation is performed using Prometheus, and Grafna. Metrics related to CPU, load, Heap Space, Garbage Collection etc are monitored and visualised in a dashboard. 
+Deployment and Monitoring:
+- Docker Images: Microservices are containerized using Docker, with images built and managed through GCP Jib, optimizing deployment processes.
+- Service Monitoring: Set up with Prometheus to collect and store metrics, and Grafana for detailed visual analysis, allowing for proactive system management.
